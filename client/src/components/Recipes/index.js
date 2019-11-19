@@ -32,9 +32,9 @@ class Recipes extends Component {
                         </h1>
                     </div>
                     <div className="card-body text-center">
-                        <h4><Link to="/recipes/create" className='btn btn-info'>Create New Recipe</Link></h4>
+                        <h4><Link to="/create" className='btn btn-info'>Create New Recipe</Link></h4>
                         <table className="table table-stripe">
-                            <thead className="thead-dark">
+                            <thead className="thead-light">
                             <tr>
                                 <th>Title</th>
                                 <th>Author</th>
@@ -47,7 +47,7 @@ class Recipes extends Component {
                                 <tr key = {recipe.id}>
                                     <td >{recipe.title}</td>
                                     <td>{recipe.author}</td>
-                                    <td><Link to={`/recipes/${recipe.id}`} className="btn btn-success">See Detail</Link>&nbsp;</td>
+                                    <td><Link to={`/recipes/${recipe.id}`} className="btn btn-info">See Detail</Link>&nbsp;</td>
                                 </tr>
                             )}
                             </tbody>

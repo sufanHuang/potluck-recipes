@@ -96,8 +96,8 @@ export default class Edit extends Component {
                                 <label htmlFor="author">Author:{author}</label>
                             </div>
 
-                            <button type="submit" className="btn btn-dark recipe-buttons" onClick={this.onSubmit}>Save Change</button>
-                            <button type="submit" className="btn btn-info recipe-buttons" onClick={this.changePage}>Back to Post</button>
+                            <button type="submit" className="btn btn-dark" onClick={this.onSubmit}>Save Change</button>
+                            <button type="submit" className="btn btn-info" onClick={this.changePage}>Back to Post</button>
                         </form>
 
                     </div>

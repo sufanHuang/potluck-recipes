@@ -50,7 +50,7 @@ export default class Create extends Component {
     render(){
         const { newRecipe } = this.state
         return (
-            <div className='App'>
+            <div>
                 <div className = "container">
                     <div className="panel panel-default">
                         <div className="panel-heading">
@@ -95,7 +95,6 @@ export default class Create extends Component {
             </div>
         )
     }
-
 }
 
 

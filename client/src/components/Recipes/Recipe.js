@@ -45,23 +45,23 @@ export default class Recipe extends Component{
         const {  id, title, author, prep_time, ingredients,steps } = this.state.recipe
         return(
             <div className='App'>
-                <div key = {id } className="card" style={{width:'50rem'}}>
-                    <div className="card-body">
-                        <h3 className="card-title">{title}</h3>
-                        <h5 className="card-title"> Author: {author}</h5>
-                        <h5 className="card-title"> Prep_time: {prep_time}</h5>
-                        <p className="card-text">Ingredients:{ingredients}</p>
-                        <p className="card-text">Steps:{steps}</p>
+                <div key = {id } className="card" style={{width:'75rem'}}>
+                    <div className="card-body text-center">
+                        <h3 className="card-title"><strong>{title}</strong></h3>
+                        <h5 className="card-title"><strong>Author:</strong> {author}</h5>
+                        <h5 className="card-title"><strong>Prep_time:</strong> {prep_time}</h5>
+                        <p className="card-text"><strong>Ingredients:</strong>{ingredients}</p>
+                        <p className="card-text"><strong>Steps:</strong>Steps:{steps}</p>
                     </div>
-                    <button className='btn btn-danger recipe-buttons' onClick={this.deletePost}>Delete Post</button>
-                    <button className='btn btn-dark recipe-buttons'>
+                    <button className='btn' onClick={this.deletePost}>Delete Post</button>
+                    <button className='btn'>
                         <Link to = {{
                             pathname: `/recipes/${id}/edit`
                         }}
                         >Edit Post
                         </Link>
                     </button>
-                    <button className='btn btn-info recipe-buttons' onClick={this.changePage}>Back to Home</button>
+                    <button className='btn' onClick={this.changePage}>Back to Home</button>
 
                 </div>
             </div>
